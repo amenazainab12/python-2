@@ -1,0 +1,30 @@
+S = "Sand"or "sand" or "S" or "s"
+G = "Gravel" or "gravel" or "G" or "g"
+C = "Cement" or "cement" or "C" or "c"
+sgmax=50.1
+cmax=25.1
+sgmin=49.0
+cmin=25.1
+
+Scontent = input("Does the sack contain Sand(S),Cement(C),Gravel(G):  ")
+def sackcontents(Scontent):
+    if Scontent == C:
+        Cweight = int(input(" The weight of Cement sack is?"))
+        if Cweight <= cmin :
+            print("underweight")
+        elif Cweight >= cmax:
+            print("overweight")
+        else:
+            print(Cweight,Scontent)
+    elif Scontent == G or S:
+        if  GSweight <= gsmin :
+              print("underweight")
+        elif  GSweight >= gsmax :
+              print("overweight")
+        else:
+              print(GSweight,Scontent)
+    else:
+          print("SACK REJECTED")
+   
+        
+
